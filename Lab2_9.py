@@ -1,8 +1,5 @@
-from datetime import datetime
-current_datetime = datetime.now()
-formatted_datetime = current_datetime.strftime('%y.%m.%d %H:%M')
+from get_datetime import get_datetime
+get_datetime()
 
 a, b = 5, 7
 print(a + b)
-
-print(formatted_datetime)
