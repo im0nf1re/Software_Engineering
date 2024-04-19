@@ -1,5 +1,6 @@
 from get_datetime import get_datetime
 get_datetime()
+
 try:
     number = float(input("Введите число от 0 до 10: "))
     if not 0 <= number <= 10: print("Число должно быть в диапазоне от 0 до 10.")
