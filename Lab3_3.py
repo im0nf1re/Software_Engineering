@@ -1,7 +1,5 @@
-from datetime import datetime
-current_datetime = datetime.now()
-formatted_datetime = current_datetime.strftime('%y.%m.%d %H:%M')
-
+from get_datetime import get_datetime
+get_datetime()
 try:
     number = float(input("Введите число от 0 до 10: "))
     if not 0 <= number <= 10: print("Число должно быть в диапазоне от 0 до 10.")
@@ -10,5 +8,3 @@ try:
     else: print("Число находится в диапазоне от 6 до 10 включительно.")
 except ValueError:
     print("Необходимо ввести число.")
-
-print(formatted_datetime)

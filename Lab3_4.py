@@ -1,6 +1,5 @@
-from datetime import datetime
-current_datetime = datetime.now()
-formatted_datetime = current_datetime.strftime('%y.%m.%d %H:%M')
+from get_datetime import get_datetime
+get_datetime()
 
 sentence = input("Введите предложение на английском: ")
 print("Длина предложения:", len(sentence))
@@ -14,5 +13,3 @@ starts_with_the = sentence.startswith("The")
 ends_with_end = sentence.endswith("end")
 print("Начинается ли предложение с 'The'?", starts_with_the)
 print("Заканчивается ли предложение на 'end'?", ends_with_end)
-
-print(formatted_datetime)
